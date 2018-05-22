@@ -1,0 +1,609 @@
+[
+  {
+    "page": "+",
+    "plugins": [
+      {
+        "-name": "quiet",
+        "tag": "PRELOADER"
+      },
+      {
+        "name": "preloader",
+        "tag": "PRELOADER"
+      },
+      {
+        "name": "login3",
+        "img": "%THEME%login2",
+        "tag": "LOGIN3"
+      },
+      {
+        "name": "console",
+        "img": "%THEME%console",
+        "tag": "CONSOLE"
+      },
+      {
+        "name": "info/notifications",
+        "img": "%THEME%info",
+        "tag": "WIDGET"
+      }
+    ]
+  },
+  {
+    "page": "*",
+    "plugins": [
+    ]
+  },
+  {
+    "page": "room1/1",
+    "plugins": [
+      {
+        "name": "room1/g1",
+        "img": "%THEME%room1",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "room1/description",
+        "img": "%THEME%room1",
+        "options": "Sync",
+        "position": 2
+      },
+	  {
+        "name": "room1/tags",
+        "img": "%THEME%room1",
+        "options": "Sync",
+        "position": 2
+      },
+	  {
+        "name": "room1/tags1",
+        "img": "%THEME%room1",
+        "options": "Sync",
+        "position": 2
+      },
+      {
+        "name": "room1/layout",
+        "img": "%THEME%room1",
+        "tag": "LAYOUT"
+      }
+    ]
+  },
+  {
+    "page": "room2/1",
+    "plugins": [
+      {
+        "name": "room2/g1",
+        "img": "%THEME%room2",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "room2/event_viewer2",
+        "img": "%THEME%room2",
+        "options": "Sync",
+        "position": 2,
+        "opened-count": 2
+      },
+      {
+        "name": "room2/add_comment2",
+        "img": "%THEME%room2",
+        "options": "Sync",
+        "position": 2
+      },
+      {
+        "name": "room2/add_field",
+        "img": "%THEME%room2/add_field",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "room2/layout",
+        "img": "%THEME%room2",
+        "tag": "LAYOUT"
+      }
+    ]
+  },
+  {
+    "page": "edit/*",
+    "plugins": [
+      {
+        "name": "query",
+        "img": "%THEME%query",
+        "import": "%FOLDER%/%PAGE%.json",
+        "tag": "QUERY"
+      }
+    ]
+  },
+  {
+    "page": "user",
+    "plugins": [
+      {
+        "name": "user",
+        "img": "%THEME%user",
+        "import": "%FOLDER%/%PAGE%.json",
+        "tag": "USER"
+      }
+    ]
+  },
+  {
+    "page": "user2",
+    "plugins": [
+      {
+        "name": "toolbar",
+        "img": "%THEME%toolbar",
+        "options": "Sync",
+        "position": 21,
+        "event": "change-view",
+        "toolbar-items": {
+          "view-1x": "1x",
+          "view-2x": "2x",
+          "view-3x": "3x"
+        }
+      },
+      {
+        "name": "user2/tabs",
+        "img": "%THEME%tabs",
+        "options": "Sync",
+        "position": 3,
+        "tab-groups": {
+          "all": "Все",
+          "personal": "Личные",
+          "system": "Системные"
+        },
+        "tab-style": "nav-pills"
+      },
+      {
+        "name": "user2/g1",
+        "img": "%THEME%user",
+        "options": "Sync",
+        "position": 1,
+        "tab-group": "personal"
+      },
+      {
+        "name": "user2/g2",
+        "img": "%THEME%user",
+        "options": "Sync",
+        "position": 1,
+        "tab-group": "system"
+      },
+      {
+        "name": "user2/photocrop",
+        "img": "%THEME%photocrop",
+        "options": "Sync",
+        "position": 2
+      },
+      {
+        "name": "info/popover",
+        "img": "%THEME%info",
+        "position": 2
+      },
+      {
+        "name": "user2/layout",
+        "img": "%THEME%user",
+        "tag": "LAYOUT"
+      }
+    ]
+  },
+  {
+    "page": "filemanager/panels",
+    "plugins": [
+      {
+        "name": "filemanager",
+        "img": "%THEME%filemanager",
+        "tag": "FILEMANAGER"
+      },
+      {
+        "name": "player",
+        "img": "%THEME%player",
+        "tag": "PLAYER"
+      }
+    ]
+  },
+  {
+    "page": "filemanager/panels2",
+    "plugins": [
+      {
+        "name": "filemanager2",
+        "img": "%THEME%filemanager2",
+        "tag": "FILEMANAGER2"
+      },
+      {
+        "name": "player2",
+        "img": "%THEME%player2",
+        "tag": "PLAYER2"
+      }
+    ]
+  },
+  {
+    "page": "musiconhold",
+    "plugins": [
+      {
+        "name": "moh",
+        "img": "%THEME%moh",
+        "import": "%FOLDER%/%PAGE%.json",
+        "tag": "MOH"
+      },
+      {
+        "name": "player",
+        "img": "%THEME%player",
+        "import": "%FOLDER%/%PAGE%.json",
+        "tag": "PLAYER"
+      }
+    ]
+  },
+  {
+    "page": "log",
+    "plugins": [
+      {
+        "name": "systemlog",
+        "img": "%THEME%systemlog",
+        "import": "%FOLDER%/%PAGE%.json",
+        "tag": "SYSLOG"
+      }
+    ]
+  },
+  {
+    "page": "operator",
+    "plugins": [
+      {
+        "name": "operator",
+        "img": "%THEME%operator",
+        "import": "%FOLDER%/%PAGE%.json",
+        "tag": "OPERATOR"
+      }
+    ]
+  },
+  {
+    "page": "users",
+    "plugins": [
+      {
+        "name": "users",
+        "img": "%THEME%users",
+        "import": "%FOLDER%/%PAGE%.json",
+        "tag": "USERS"
+      }
+    ]
+  },
+  {
+    "page": "main",
+    "plugins": [
+      {
+        "name": "dashboard2/g1",
+        "img": "%THEME%dashboard",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "dashboard2/g2",
+        "img": "%THEME%dashboard",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "dashboard2/g3",
+        "img": "%THEME%dashboard",
+        "options": "Sync Dynamic-time",
+        "position": 2
+      },
+      {
+        "name": "dashboard2/g7",
+        "img": "%THEME%dashboard",
+        "options": "Sync",
+        "position": 2
+      },
+      {
+        "name": "dashboard2/g4",
+        "img": "%THEME%dashboard",
+        "options": "Sync",
+        "position": 2
+      },
+      {
+        "name": "dashboard2/g5",
+        "img": "%THEME%dashboard",
+        "options": "Sync Lazy-load",
+        "position": 2
+      },
+      {
+        "name": "dashboard2/g8",
+        "img": "%THEME%dashboard",
+        "options": "Sync Lazy-load",
+        "position": 2
+      },
+      {
+        "name": "dashboard2/g9",
+        "img": "%THEME%dashboard",
+        "options": "Sync Lazy-load",
+        "position": 2
+      },
+      {
+        "name": "dashboard2/g10",
+        "img": "%THEME%dashboard",
+        "options": "Sync Lazy-load",
+        "position": 2
+      },
+      {
+        "name": "trigger_button",
+        "img": "%THEME%dashboard",
+        "options": "Sync",
+        "position": 1,
+        "tag-name": "T1"
+      },
+      {
+        "name": "dashboard2/g6",
+        "img": "%THEME%dashboard",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "dashboard2/layout",
+        "img": "%THEME%dashboard",
+        "tag": "DASHBOARD"
+      }
+    ]
+  },
+  {
+    "page": "dial/lists",
+    "plugins": [
+      {
+        "name": "dial/lists/g2",
+        "img": "%THEME%dial",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "dial/lists/layout",
+        "img": "%THEME%dial",
+        "tag": "LAYOUT"
+      }
+    ]
+  },
+  {
+    "page": "dial/scripts",
+    "plugins": [
+      {
+        "name": "dial/scripts/g2",
+        "img": "%THEME%dial",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "dial/scripts/layout",
+        "img": "%THEME%dial",
+        "tag": "LAYOUT"
+      }
+    ]
+  },
+  {
+    "page": "dial/tasks",
+    "plugins": [
+      {
+        "name": "dial/tasks/g2",
+        "img": "%THEME%dial",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "dial/tasks/layout",
+        "img": "%THEME%dial",
+        "tag": "LAYOUT"
+      }
+    ]
+  },
+  {
+    "page": "dial/process",
+    "plugins": [
+      {
+        "name": "dial/process/g1",
+        "img": "%THEME%dial",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "dial/process/g2",
+        "img": "%THEME%dial",
+        "options": "Sync",
+        "position": 2
+      },
+      {
+        "-name": "slider",
+        "img": "%THEME%slider",
+        "options": "Sync",
+        "position": 2
+      },
+      {
+        "name": "dial/process/g3",
+        "img": "%THEME%dial",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "dial/process/layout",
+        "img": "%THEME%dial",
+        "tag": "LAYOUT"
+      }
+    ]
+  },
+  {
+    "page": "system/triggers",
+    "plugins": [
+      {
+        "name": "triggers/g3",
+        "img": "%THEME%monitor",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "triggers/layout",
+        "img": "%THEME%monitor",
+        "tag": "LAYOUT"
+      }
+    ]
+  },
+  {
+    "page": "reports/calls",
+    "plugins": [
+      {
+        "name": "reports/calls/g1",
+        "img": "%THEME%reports",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "reports/calls/g2",
+        "img": "%THEME%reports",
+        "options": "Sync",
+        "position": 3
+      },
+      {
+        "name": "reports/calls/g3",
+        "img": "%THEME%reports",
+        "options": "Sync",
+        "position": 2
+      },
+      {
+        "name": "info/info_number",
+        "img": "%THEME%info",
+        "options": "Sync",
+        "position": 2
+      },
+      {
+        "name": "reports/calls/layout",
+        "img": "%THEME%reports",
+        "tag": "LAYOUT"
+      },
+      {
+        "name": "player",
+        "img": "%THEME%player",
+        "tag": "PLAYER"
+      }
+    ]
+  },
+  {
+    "page": "reports/agents",
+    "plugins": [
+      {
+        "name": "reports/agents",
+        "img": "%THEME%reports",
+        "tag": "AGENTS-REPORT"
+      }
+    ]
+  },
+  {
+    "page": "reports/numbers",
+    "plugins": [
+      {
+        "name": "reports/numbers",
+        "img": "%THEME%reports",
+        "tag": "BY-NUMBERS-REPORT"
+      }
+    ]
+  },
+  {
+    "page": "reports/dialer",
+    "plugins": [
+      {
+        "name": "reports/dialer",
+        "img": "%THEME%reports",
+        "tag": "DIALER-REPORT"
+      }
+    ]
+  },
+  {
+    "page": "b24/process",
+    "plugins": [
+      {
+        "name": "model/profile",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "toolbar",
+        "img": "%THEME%toolbar",
+        "options": "Sync",
+        "position": 21,
+        "event": "change-view",
+        "toolbar-items": {
+          "view-1x": "1x",
+          "view-2x": "2x",
+          "view-3x": "3x",
+          "view-4x": "4x"
+        }
+      },
+      {
+        "name": "b24/tabs",
+        "img": "%THEME%tabs",
+        "options": "Sync",
+        "position": 3,
+        "tab-groups": {
+          "all": "Все",
+          "buyer": "Покупатель",
+          "seller": "Продавец",
+          "franchise-buyer": "Покупатель франшизы"
+        },
+        "tab-style": "nav-pills"
+      },
+      {
+        "name": "b24/g1",
+        "img": "%THEME%user",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "b24/g2",
+        "img": "%THEME%user",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "b24/g3",
+        "img": "%THEME%user",
+        "options": "Sync",
+        "position": 1,
+        "tab-group": "buyer"
+      },
+      {
+        "name": "b24/g4",
+        "img": "%THEME%user",
+        "options": "Sync",
+        "position": 1,
+        "tab-group": "seller"
+      },
+      {
+        "name": "b24/g5",
+        "img": "%THEME%user",
+        "options": "Sync",
+        "position": 1,
+        "tab-group": "franchise-buyer"
+      },
+      {
+        "name": "info/popover",
+        "img": "%THEME%info",
+        "position": 2
+      },
+      {
+        "name": "editor",
+        "img": "%THEME%editor",
+        "position": 2
+      },
+      {
+        "name": "b24/layout",
+        "img": "%THEME%user",
+        "tag": "LAYOUT"
+      }
+    ]
+  },
+  {
+    "page": "crm/company",
+    "plugins": [
+      {
+        "name": "crm/g1",
+        "img": "%THEME%crm",
+        "options": "Sync",
+        "position": 1
+      },
+      {
+        "name": "crm/layout",
+        "img": "%THEME%crm",
+        "tag": "LAYOUT"
+      }
+    ]
+  }
+]

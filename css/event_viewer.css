@@ -1,0 +1,257 @@
+.events-container {
+    /*height:640px;
+    overflow:auto;*/
+
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.events-group {
+    position: relative;
+    /*background: #fff;*/
+    margin: 0 0 25px;
+    padding: 10px;
+}
+
+.events-group:before {
+    content: ''; 
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    bottom: 40px;
+    z-index: 1;
+    margin: 0 0 0 -1px;
+    border-left: 1px dashed #2c3e4e;
+}
+
+.events-group > h3 {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    border: none;
+    margin: 0 0 20px;
+    cursor: pointer;
+}
+
+.events-group > h3 > span {
+    padding: 5px 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background: #828384;
+    font-size: 12px;
+    font-weight: 100;
+    min-width: 100px;
+    padding: 5px;
+}
+
+.events-group > .collapse-box {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.25s ease-in 0s;
+    -moz-transition: all 0.25s ease-in 0s;
+    -o-transition: all 0.25s ease-in 0s;
+    transition: all 0.25s ease-in 0s;
+}
+
+.events-group > .collapse-box .event-item {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin: 0 0 20px;
+    background: #fff;
+    padding: 10px 20px 10px 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000; 
+    -webkit-transition: all 0.25s ease-in 0s;
+    -moz-transition: all 0.25s ease-in 0s;
+    -o-transition: all 0.25s ease-in 0s;
+    transition: all 0.25s ease-in 0s;
+    overflow: hidden;
+}
+
+.events-group > .collapse-box .event-item .content {
+    /*margin-left: 40px;*/
+    display: inline-block;
+}
+
+.events-group > .collapse-box .event-item .content .header {
+    font-size: 13px;
+    font-weight: 300;
+    color: #9b9c9c;
+}
+
+.events-group > .collapse-box > .event-item.call {
+    width: 70%;
+    margin: 0 auto 20px;
+}
+
+.events-group > .collapse-box > .event-item.call .icon.in {
+    color: #2ecc71;
+    margin-top: 2px;
+}
+
+.events-group > .collapse-box > .event-item.call .icon.out {
+    color: #01b9fe;
+    margin-top: 2px;
+}
+
+/*.events-group > .collapse-box > .event-item.comment:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -58px;
+    width: 48px;
+    height: 48px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #396fc6;
+    background: url('user.png') no-repeat center center;
+    background-size: 100% 100%;
+    opacity: 0;
+    -webkit-transition: all 0.25s ease-in 0s;
+    -moz-transition: all 0.25s ease-in 0s;
+    -o-transition: all 0.25s ease-in 0s;
+    transition: all 0.25s ease-in 0s;
+}*/
+
+/*.events-group > .collapse-box > .event-item.comment:hover {
+    padding-left: 70px;
+}
+
+.events-group > .collapse-box > .event-item.comment:hover:before {
+    left: 10px;
+    opacity: 1;
+}*/
+
+.events-group > .collapse-box > .event-item > h4 {
+    position: relative;
+    margin: 0 0 5px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #9b9c9c;
+    margin-bottom: 10px;
+}
+
+.events-group > .collapse-box > .event-item > div {
+    font-size: 14px;
+    color: #000; 
+}
+
+.events-group > .collapse-box > .event-item > div > p {
+    margin: 0 0 5px;
+}
+
+.events-group > .collapse-box > .event-item > div > p:last-child {
+    margin: 0;
+}
+
+.events-group > .collapse-box > .event-item.call > h4 {
+    padding-right: 10px;
+}
+
+/*.events-group > .collapse-box > .event-item.call > h4:before {
+    content: '';
+    font-family: FontAwesome;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: -8px 0 0;
+}
+
+.events-group > .collapse-box > .event-item.call > h4.in:before {
+    content: '\f061';
+    color: #64C42B;
+}
+
+.events-group > .collapse-box > .event-item.call > h4.out:before {
+    content: '\f060';
+    color: #55ACDE;
+}*/
+
+.events-group > .collapse-box > .event-item.call > h4 > a {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: -5px 0 0;
+    background: url('cassette.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.events-group > .collapse-box > .event-item.comment > .content {
+    display: block;
+}
+
+.events-group > .collapse-box > .event-item.comment > .content > textarea {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    margin: 5px 0 0;
+    padding: 0 0 5px;
+    font-size: 14px;
+    color: #000; 
+    resize: none;
+    overflow:hidden;
+}
+
+.events-group > .collapse-box > .event-item.comment > .content > .after-text-stripe {
+    display: block;
+    width: 0px;
+    height: 1px;
+    background: #0298d1;
+    margin: 0 0 5px;
+   /* -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: width 0.25s ease-in-out 0s;
+    -moz-transition: width 0.25s ease-in-out 0s;
+    -o-transition: width 0.25s ease-in-out 0s;
+    transition: width 0.25s ease-in-out 0s;*/
+}
+.events-group > .collapse-box > .event-item.comment > .content > textarea:focus + .after-text-stripe {
+    width: 100%;
+}
+
+.events-group > .btn {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.events-group > .btn > .fa {
+    -webkit-transition: all 0.25s ease-in 0s;
+    -moz-transition: all 0.25s ease-in 0s;
+    -o-transition: all 0.25s ease-in 0s;
+    transition: all 0.25s ease-in 0s;
+    font-size: 16px;
+    color: #2c3e4e;
+}
+
+.events-group > .btn.opened > .fa {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}

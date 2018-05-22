@@ -1,0 +1,62 @@
+.add-field-anchor{
+    position: relative;
+    display: inline;
+    width: 0;
+    height: 0;
+    z-index:1000;
+}
+
+.add-field-anchor .add-field-container {
+    position: absolute;
+    left: 10px;
+    width: 300px;
+    min-height: 100px;
+    border: 1px solid #000;
+    background: #fff;
+    padding: 5px 10px;
+    opacity: 0;
+    -webkit-transform:translateX(-100%);
+    -moz-transform:translateX(-100%);
+    -ms-transform:translateX(-100%);
+    -o-transform:translateX(-100%);
+    transform:translateX(-100%);
+    -webkit-transition:all 0.25s ease-in-out 0s;
+    -moz-transition:all 0.25s ease-in-out 0s;
+    -o-transition:all 0.25s ease-in-out 0s;
+    transition:all 0.25s ease-in-out 0s;
+}
+
+.add-field-anchor.attached .add-field-container {
+    opacity: 1;
+    -webkit-transform:translateX(0);
+    -moz-transform:translateX(0);
+    -ms-transform:translateX(0);
+    -o-transform:translateX(0);
+    transform:translateX(0);
+}
+
+.add-field-anchor .add-field-container .field-label {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    margin: 0 0 10px;
+}
+
+.add-field-anchor .add-field-container .field-value {
+    display: block;
+    width: 100%;
+    border: 1px solid #000;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    margin: 0 0 10px;
+}
+
+.add-field-anchor .add-field-container .btn-save {
+    background: #55acde;
+    color: #fff;
+    border-bottom: 3px solid #773299;
+}
